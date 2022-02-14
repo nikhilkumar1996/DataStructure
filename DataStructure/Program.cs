@@ -11,16 +11,25 @@ namespace DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Data Structure Program");
-            LinkedList linkedList = new LinkedList();
-            linkedList.Add(56);
-            linkedList.Add(48);
-            linkedList.Add(90);
-            linkedList.Add(55);
-            linkedList.InsertionBetween(2, 30);
-            linkedList.Search(55);
-            linkedList.RemoveFirstNode();
-            linkedList.RemoveLastNode();
-            linkedList.Dislpay();
+            //LinkedList linkedList = new LinkedList();
+            //linkedList.Add(56);
+            //linkedList.Add(48);
+            //linkedList.Add(90);
+            //linkedList.Add(55);
+            //linkedList.InsertionBetween(2, 30);
+            //linkedList.Search(55);
+            //linkedList.RemoveFirstNode();
+            //linkedList.RemoveLastNode();
+            //linkedList.Dislpay();
+            Stack stack = new Stack();
+            stack.push(70);
+            stack.push(30);
+            stack.push(56);
+            stack.Peek();
+            stack.Pop();
+            stack.Display();
+            stack.isEmpty();
+
         }
     }
 }
