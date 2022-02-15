@@ -17,7 +17,10 @@ namespace DataStructure
                               "4.\n HashTable for frequency of Words \n" +
                               "5.\n HashTable for frequnecy of paragraph \n" +
                               "6.\n HashTable for Removing a word \n" +
-                              "7.\n Exit \n ");
+                              "7.\n BinarySearchTree Insertion \n" +
+                              "8.\n BinarySearchTree Other Elements Insertion \n" +
+                              "9.\n BinarySearchTree Search \n" +
+                              "10.\n Exit \n ");
             Console.WriteLine("Choose Program");
             bool flag=true;
             while (flag)
@@ -134,8 +137,51 @@ namespace DataStructure
                         }
                         break;
 
-
                     case 7:
+                        BinarySearchTree<int> BST = new BinarySearchTree<int>(10);
+                        BST.Insert(30);
+                        BST.Insert(70);
+                        BST.Display();
+                        break;
+
+                    case 8:
+                        BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>(40);
+                        binarySearchTree.Insert(30);
+                        binarySearchTree.Insert(70);
+                        binarySearchTree.Insert(22);
+                        binarySearchTree.Insert(40);
+                        binarySearchTree.Insert(11);
+                        binarySearchTree.Insert(3);
+                        binarySearchTree.Insert(16);
+                        binarySearchTree.Insert(60);
+                        binarySearchTree.Insert(95);
+                        binarySearchTree.Insert(65);
+                        binarySearchTree.Insert(63);
+                        binarySearchTree.Insert(67);
+                        binarySearchTree.Display();
+                        binarySearchTree.GetSize();
+                        break;
+
+                    case 9:
+                        BinarySearchTree<int> binarySearchTree1 = new BinarySearchTree<int>(40);
+                        binarySearchTree1.Insert(30);
+                        binarySearchTree1.Insert(70);
+                        binarySearchTree1.Insert(22);
+                        binarySearchTree1.Insert(40);
+                        binarySearchTree1.Insert(11);
+                        binarySearchTree1.Insert(3);
+                        binarySearchTree1.Insert(16);
+                        binarySearchTree1.Insert(60);
+                        binarySearchTree1.Insert(95);
+                        binarySearchTree1.Insert(65);
+                        binarySearchTree1.Insert(63);
+                        binarySearchTree1.Insert(67);
+                        binarySearchTree1.Display();
+                        bool result = binarySearchTree1.Search(63, binarySearchTree1);
+                        Console.WriteLine(result);
+                        break;
+
+                    case 10:
                         flag = false;
                         break;
 
